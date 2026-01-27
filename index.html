@@ -3,20 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rentern Web Development Training</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .enter-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #1f4fd8;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .enter-btn:hover {
+            background-color: #163aa8;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello Everyone</h1>
-    <p>you already know me I am <B>Robert Dennis</B>, and I will be
-    showing you how you will be beginning and growing your skills with 
-    Rentern LLC. Before you can assist me in my development you must first make it past 
-    the front end. 
-    </p>
-    <h1>here is where the testing and training will begin</h1>
 
-    <p>
-        here I want you to create a file in the pages folder named "{yournamehere}.html" you will then add a 
-        {"<a href=""></a>"} to this index page that creates a hyperlink to your page in the folder.
-    </p>
+    <div class="container">
+        <h1>Hello Everyone</h1>
+
+        <p>
+            You already know me. I am <strong>Robert Dennis</strong>, and I will be
+            showing you how you will be beginning and growing your skills with
+            <strong>Rentern LLC</strong>. Before you can assist me in development,
+            you must first make it past the front end.
+        </p>
+
+        <h1>Here is where the testing and training will begin</h1>
+
+        <p>
+            Here, I want you to create a file inside the <code>pages</code> folder named
+            <code>yournamehere.html</code>.  
+            You will then add an anchor tag
+            <code>&lt;a href=""&gt;&lt;/a&gt;</code> to the <strong>home.html</strong> page
+            that creates a hyperlink to your page.
+        </p>
+
+        
+        <a class="enter-btn" href="pages/home.html">
+            Enter Web Development Training
+        </a><br>
+        <a class="enter-btn" href="traineespages/trainees.html">
+            Enter Rentern Fullstack Training
+        </a>
+    </div>
+
 </body>
 </html>

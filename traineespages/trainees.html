@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentern Trainee Login</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1f4fd8, #0f1f4f);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .login-box {
+            background: #ffffff;
+            padding: 40px;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1f4fd8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #163aa8;
+        }
+
+        .error {
+            margin-top: 15px;
+            color: red;
+            display: none;
+        }
+
+        
+        .bypass {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #999;
+            cursor: pointer;
+        }
+
+        .bypass:hover {
+            color: #1f4fd8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>Rentern Trainee Portal</h2>
+
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
+        <button onclick="fakeLogin()">Sign In</button>
+
+        <div class="error" id="errorMsg">
+            ❌ Login failed. Access denied.
+        </div>
+
+        <!-- Secret bypass -->
+        <div class="bypass" onclick="bypassLogin()">
+            system access
+        </div>
+    </div>
+
+    <script>
+        function fakeLogin() {
+            document.getElementById("errorMsg").style.display = "block";
+        }
+
+        function bypassLogin() {
+            window.location.href = "welcome.html";
+        }
+    </script>
+
+</body>
+</html>

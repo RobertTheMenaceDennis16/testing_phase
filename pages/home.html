@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Student Portfolio Hub</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .card h3 {
+        margin: 10px 0 5px;
+    }
+    .card p {
+        margin: 0 0 15px;
+        color: #555;
+        font-size: 0.9rem;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+</head>
+<body>
+<h1>Student Portfolio Showcase</h1>
+
+
+<div class="grid">
+
+    <a href="john-doe/index.html">
+        <div class="card">
+            <img src="placeholder.jpg" alt="John Doe Portfolio Preview" />
+            <h3>John Doe</h3>
+            <p>Computer Science</p>
+        </div>
+    </a>
+
+
+
+    <a href="jane-smith/index.html">
+        <div class="card">
+            <img src="placeholder.jpg" alt="Jane Smith Portfolio Preview" />
+            <h3>Jane Smith</h3>
+            <p>Data Analytics</p>
+        </div>
+    </a>
+    </div>
+</body>
+</html>
