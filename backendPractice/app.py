@@ -35,7 +35,7 @@ def get_todos():
 #API to add a new todo item
 @app.route('/todos',methods=['POST'])
 def create_todo():
-    data = request.json()  
+    data = request.get_json() 
     new_todo = Todo(title=data['title'])
     db.session.add(new_todo)
     db.session.commit()
@@ -54,3 +54,18 @@ def delete_todo(id):
 ################################################################################################
 if __name__ == '__main__':
     app.run(debug=True)   # run the Flask app in debug mode
+
+
+'''
+User clicks button template/index.html
+↓
+JavaScript sends request
+↓
+Flask receives it
+↓
+Database updates
+↓
+Flask returns JSON
+↓
+UI updates instantly with static/script.js & index.html
+'''
